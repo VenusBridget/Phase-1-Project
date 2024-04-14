@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/style.css" />
+    <title>Eta Adventures App</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>
+                <span1>eta </span1>Adventures
+            </h1>
+        </div>
+        <div class="search-box">
+            <div id="search-container">
+                <input type="text" name="search" id="srch" placeholder="Search">
+                <button id="search"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="icons">
+            <a href="#login-form"><i class="fas fa-user" id="login-btn"></i></a>
+        </div>
+
+    </header>
+  
+    <section class="slogan">
+        <h1>One stop destination for all your travel needs</h1>
+        <div id="packages" class="popular-destinations">
+            <div class="destination-card" data-destination-id="">
+                <div class="destination-card_container" id="container">
+                    <div class="destination-card_btn fav">
+                        <button onclick="likeButton()" class="like"><i class="fa fa-heart" aria-hidden="true" id="like-btn"></i></button>
+                    </div>
+                    <div class="destination-card_img">
+                        <img
+
+                            src="https://media.istockphoto.com/id/1205779274/photo/elephants-in-tsavo-east-and-amboseli-national-park-in-kenya.jpg?s=612x612&w=0&k=20&c=h0TNg9L9v4eEJo8gN1hy_ZnY0mXBhbPmfyh-wBC9zPM=">
+                    </div>
+                </div>
+                <div class="destination-card_description">
+                    <div class="destination-card_name"><span>Amboseli</span></div>
+                    <div class="destination-card_location">Kenya</div>
+                    <div class="destination-card_info">Amboseli National Park is one of the best wildlife-viewing
+                        destinations in the world, with the view of mt. Longonot and hosts different types of animals
+                        including the Big five.</div>
+                    <div class="destination-card_days">3 days</div>
+                    <div class="destination-card_price">Ksh. 70,000 pp</div>
+                    <div class="destination-card_day">12th August</div>
+                    <div class="destination-card_offer">12% off for book before June</div>
+                    <div><span id="ticket-num">5</span> tickets</div>
+                </div>
+                <div class="extra content">
+                    <button onclick = "getAlert()" id="buy-ticket">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>
+            <span1>SERVICES</span1>
+        </h2>
+        <p>Some of the services we offer include:</p>
+        <p>Hotel Booking, Air BnB Booking, Bus and Flight Ticket Booking,</p>
+        <p>Car hire services, Transport, Tour Guide</p>
+        <p>and many more.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h3>
+            <span1>CONTACT US</span1>
+        </h3>
+        <div class="contacts">
+            <p>Call us: 020-511-6782</p>
+            <p>E-mail: etadventures1@gmail.com</p>
+            <p>Instagram: etadventures1</p>
+        </div>
+    </section>
+
+    <div class="login-form-container">
+        <form onsubmit = "signUp()" id="login-form">
+            <h4>LOGIN</h4>
+            <input type="text" id="userName" placeholder="enter username">
+            <input type="password" id="password" placeholder="enter password">
+            <button type="submit" id=lgbtn >Login</button>
+            <button type="submit" id=regbtn >Register</button>
+            <p id="result">Welcome!</p>
+            <output name="result"></output>
+        </form>
+    </div>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>

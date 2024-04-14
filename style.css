@@ -1,0 +1,322 @@
+
+*{
+    font-family: Century;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px;
+    z-index: 1000;
+    height: 100px;
+    padding: 0px 50px;
+}
+.logo{
+    flex: 1;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+span1{
+    color: burlywood;
+    font-size: 60px;
+}
+span{
+    color: burlywood;
+    font-size: 20px
+}
+.search-box{
+    position: relative;
+}
+.search-box input{
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 30px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+
+}
+.search-box button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: black;
+    color: white;
+}
+h4{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+.login-form-container{
+    display: flex;
+    align-content: center;
+    padding-left: 100px;
+    padding-right: 200px;
+    height: 50px;
+    margin-top: 200px;
+    border-radius: 20px;
+    margin-bottom: 220px;
+    width: 100%;
+}
+#login-form{
+    margin: 2rem;
+    padding: 2rem;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    align-items: center;
+    right: 0;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-left:20px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-left: 20%;
+    padding-top: 20px;
+    height: 300px;
+    align-self: center;
+}
+#lgbtn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: burlywood;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+#regbtn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: burlywood;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+#userName{
+    font-size: 18px;
+}
+#password{
+    font-size: 18px;
+}
+ul{
+    flex: 2;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: .8rem;
+    padding: 10px 10px;
+    transition: 0.3s ease;
+}
+ul a:hover{
+    color: burlywood;
+}
+.icons i{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+    padding: 15px;
+}
+.icons i:hover{
+    color: burlywood;
+}
+@media screen and (max-width:1052px){
+    .search-box button{
+        position: absolute;
+    }
+    ul{
+        text-align: center;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        background: rgba(0,0,0,0.7);
+        height: 100%;
+        width: 145px;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        transition: all 0.3s ease;
+    }
+
+    .nav{
+        display: block;
+        color: white;
+        font-size: 2.5em;
+        width: 50px;
+        text-align: center;
+    }
+    .nav:hover{
+        color: burlywood;
+    }
+}
+
+.home{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.content{
+    text-align: center;
+}
+.content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem burlywood;
+}
+
+
+@media(max-width:600px){
+    .logo{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 125px;
+    width: 100%;
+    margin-top: var(--margin-3);
+    padding-bottom: 20px;
+}
+#packages{
+    padding-right: 8px;
+}
+.popular-destinations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 var(--padding-1);
+    gap: 2rem;
+    width: 100%
+}
+.slogan{
+    font-size: 24px;
+    display: flex;
+    padding-top: 120px;
+    padding-left: 160px;
+    width: 100%;
+    font-family: century;
+    font-weight: bolder;
+    padding-bottom: 0px;
+    padding-bottom: 50px;
+}
+.destination-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 250px;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border: 1px solid var(--white-25);
+    border-radius: var(--border-5);
+}
+.destination-card:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.destination-card_container{
+    height: 400px;
+    position: relative;
+    background-color: var(--white-55);
+    overflow: hidden;
+}
+.destination-card_img{
+    overflow: hidden;
+}
+#buy-ticket{
+    color: burlywood;
+    background-color: black;
+    border-radius: 0%;
+}
+.destination-card_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: -1rem;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border-radius: 50%;
+    color: var(--black-25);
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease, top 0.3s ease 0.2s;
+}
+.destination-card:hover .destination-card_btn{
+    right:1rem;
+    opacity:1;
+}
+.destination-card_description{
+    padding: calc(var(--padding-1)/2) var(--padding-1);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    font-size: 16px;
+}
+.services {
+    width: 100%;
+    background-color: black;
+    padding: 12%;
+    color: white;
+    font-family: century;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    align-content: center;
+    height: 400px;
+}
+.contact{
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    padding-top: 20px;
+    height: 300px;
+    align-items: center;
+}
+.black-btn{
+    color: black;
+}
+.red-btn{
+    color: red;
+}
